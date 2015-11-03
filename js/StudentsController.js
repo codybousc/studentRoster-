@@ -1,5 +1,7 @@
 studentRoster.controller('StudentsController', function StudentsController($scope) {
-  $scope.students = []; 
+  $scope.students = [
+    {name: "Tbone Willis"}
+  ];
   $scope.addStudent = function() {
     $scope.students.push({name: $scope.studentName});
     $scope.studentName = null; //clears input box

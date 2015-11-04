@@ -61,14 +61,14 @@
     </div>
   </div>
     <div class="row permission" ng-controller="FieldTripsController">
-      <div class="col-md-6" ng-show="studentsWithoutPermission.length">
-        <h3>Students Without Permission Slips</h3>
-        <ul>
-          <li ng-repeat="item in studentsWithoutPermission = (students|filter:{permissionSLip: false})">
-            {{item.name}} <a ng-click="addStudentWithPermissionSlip(item)">Received Permission Slip </a>
-          </li>
-        </ul>
-      </div>
+    <div class="col-md-6" ng-show="studentsWithoutPermission.length">
+    <h3>Students Without Permission Slips</h3>
+    <ul>
+      <li ng-repeat="item in studentsWithoutPermission = (students|filter:{permissionSlip:false})">
+        {{item.name}} <a ng-click="addStudentWithPermissionSlip(item)">Received Permission Slip </a>
+      </li>
+    </ul>
+  </div>
 
       <div class="col-md-6">
         <h2>Permission Slips</h2>

@@ -1,1 +1,1 @@
-var studentRoster = angular.module('studentRoster', []);
+ studentRoster = angular.module('studentRoster', []);
